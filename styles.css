@@ -1,19 +1,19 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Courier New', monospace;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     margin: 0;
-    background-color: #f0f0f0;
+    background-color: black;
+    color: white;
 }
 
 .container {
     text-align: center;
-    background-color: white;
+    background-color: black;
     padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid white;
 }
 
 .timer {
@@ -27,18 +27,16 @@ body {
     margin: 0 0.5rem;
     padding: 0.5rem 1rem;
     cursor: pointer;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
+    background-color: #FF00FF;
+    color: black;
+    border: 1px solid white;
 }
 
 .controls button:hover {
-    background-color: #45a049;
+    background-color: #CC00CC;
 }
 
 #mode-text {
     font-size: 1.2rem;
     font-weight: bold;
-    color: #333;
-} 
+    color: #FF00FF;

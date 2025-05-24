@@ -22,7 +22,7 @@ function updateDisplay() {
 function switchMode() {
     isWorkTime = !isWorkTime;
     timeLeft = isWorkTime ? workTime : breakTime;
-    modeText.textContent = isWorkTime ? 'Work Time' : 'Break Time';
+    modeText.textContent = isWorkTime ? 'GRIND TIME!' : 'CHAOS BREAK!';
     updateDisplay();
 }
 
@@ -41,7 +41,7 @@ function startTimer() {
                 clearInterval(timer);
                 isRunning = false;
                 switchMode();
-                alert(isWorkTime ? 'Break time is over! Time to work!' : 'Work time is over! Take a break!');
+                alert(isWorkTime ? "Oi! Break's over! Back to the GRIND!" : 'Done with the GRIND? Go cause some CHAOS!');
                 startTimer();
             }
         }, 1000);
@@ -58,7 +58,7 @@ function resetTimer() {
     isRunning = false;
     isWorkTime = true;
     timeLeft = workTime;
-    modeText.textContent = 'Work Time';
+    modeText.textContent = 'GRIND TIME!';
     updateDisplay();
 }
 
@@ -68,4 +68,3 @@ resetButton.addEventListener('click', resetTimer);
 
 // Initialize the display
 timeLeft = workTime;
-updateDisplay(); 
